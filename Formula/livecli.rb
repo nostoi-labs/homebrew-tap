@@ -1,7 +1,7 @@
 class Livecli < Formula
   include Language::Python::Virtualenv
 
-  desc "Command line for Ableton Live, built for AI agents, with measurement probes"
+  desc "Command-line for Ableton Live, built for AI agents, with measurement probes"
   homepage "https://github.com/nostoi-labs/livecli"
   url "https://files.pythonhosted.org/packages/d9/5a/8b67ed29012ca7758b09e7c6565ca764a779521a649d3455f248c58ea1f7/nostoi_livecli-0.2.0.tar.gz"
   sha256 "3602ce53dbf47b190564ce02bb910df8f933947f8efbdd5315318e64353abc2c"

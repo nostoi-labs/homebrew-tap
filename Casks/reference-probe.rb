@@ -8,6 +8,7 @@ cask "reference-probe" do
   homepage "https://github.com/nostoi-labs/livecli"
 
   depends_on arch: :arm64
+  depends_on macos: ">= :monterey"
 
   pkg "ReferenceProbe-#{version}.pkg"
 

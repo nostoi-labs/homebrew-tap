@@ -8,11 +8,15 @@ cask "loudline-probe" do
   homepage "https://fwradar.com/loudline/"
 
   depends_on arch: :arm64
+  depends_on macos: ">= :ventura"
 
   pkg "LoudlineProbe-#{version}.pkg"
 
   uninstall pkgutil: "com.nostoi.loudline-probe",
             delete:  "/Library/Audio/Plug-Ins/VST3/LoudlineProbe.vst3"
 
-  caveats "Freeware (see LICENSE.txt in the release). Install with Live closed, then in Live: Settings > Plug-ins > Rescan."
+  caveats <<~EOS
+    Freeware (see LICENSE.txt in the release).
+    Install with Live closed, then in Live: Settings > Plug-ins > Rescan.
+  EOS
 end
