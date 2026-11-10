@@ -8,7 +8,7 @@ cask "loudline-probe" do
   homepage "https://fwradar.com/loudline/"
 
   depends_on arch: :arm64
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   pkg "LoudlineProbe-#{version}.pkg"
 
